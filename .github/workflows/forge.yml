@@ -1,0 +1,21 @@
+name: The API Smith — Forge CI
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  forge:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: 🔥 Forge the API
+        run: python forge_master.py
+      - name: 📜 Save forged output
+        run: python forge_master.py > forge_output.json
+      - name: ✅ Report status
+        run: echo "The API Smith strikes — forge completed successfully!"
