@@ -1,11 +1,12 @@
-# 🔥 The API Smith — nich
+# 🔥 The API Smith
 
-Forge your API adventures with Python.
+**Forge your API adventures with Python.**
 
 ## 📜 Scripts
 
-- **`main.py`** — главный кузнец: качает посты из публичного API, сохраняет в JSON, печатает заголовки.
-- **`forge_master.py`** — объединённая магия: **quest** + **pulse** + **smith** в одном флакере.
+- **`main.py`** — main script: fetches posts from public API, saves to JSON, prints titles.
+
+- **`forge_master.py`** — combined magic: **quest** + **pulse** + **smith** in one flow.
 
 ## 🚀 Run
 
