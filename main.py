@@ -1,10 +1,4 @@
 #!/usr/bin/env python3
-"""
-main.py - Скрипт для работы с публичным API и парсинга данных.
-
-Пример: получает список постов с JSONPlaceholder API,
-фильтрует по пользователю и сохраняет результат в JSON-файл.
-"""
 
 import json
 import sys
@@ -12,12 +6,10 @@ from typing import List, Dict, Any
 
 import requests
 
-
 API_BASE_URL = "https://jsonplaceholder.typicode.com"
 
 
 def fetch_posts(user_id: int | None = None) -> List[Dict[str, Any]]:
-    """Получить посты из API. Опционально отфильтровать по ID пользователя."""
     endpoint = f"{API_BASE_URL}/posts"
     params = {"userId": user_id} if user_id is not None else None
 
@@ -31,7 +23,6 @@ def fetch_posts(user_id: int | None = None) -> List[Dict[str, Any]]:
 
 
 def save_to_json(data: List[Dict[str, Any]], filename: str) -> None:
-    """Сохранить данные в JSON-файл."""
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
     print(f"Сохранено {len(data)} записей в файл '{filename}'")
@@ -48,7 +39,6 @@ def main() -> None:
     filename = f"posts_user_{user_id}.json" if user_id else "posts_all.json"
     save_to_json(posts, filename)
 
-    # Вывести краткую статистику
     titles = [post["title"] for post in posts[:5]]
     print("Первые 5 заголовков:")
     for title in titles:

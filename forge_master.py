@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-"""Forge Master — объединяет кузнечество: quest + pulse + smith в одном."""
 
 import json
 import random
