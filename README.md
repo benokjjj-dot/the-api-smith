@@ -1,12 +1,13 @@
 # 🔥 The API Smith
 
-**Forge your API adventures with Python.**
+Forge your API adventures with Python.
 
-## 📜 Scripts
+A collection of tools that transform public API data into useful reports, quests, and monitors. Built with Python and JSONPlaceholder.
 
-- **`main.py`** — main script: fetches posts from public API, saves to JSON, prints titles.
+## Scripts
 
-- **`forge_master.py`** — combined magic: **quest** + **pulse** + **smith** in one flow.
+- **`main.py`** — Main forge: fetches posts, saves to JSON, prints titles.
+- **`forge_master.py`** — Combined magic: quest + pulse + smith in one flow.
 
 ## 🚀 Run
 
@@ -15,4 +16,6 @@ python main.py
 python forge_master.py
 ```
 
-## ⭐ Built by The API Smith
+## ⭐ Built in public
+
+Open source project — feel free to fork, contribute, or just explore.
